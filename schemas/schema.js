@@ -6,6 +6,8 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 // We import object and document schemas
 import blockContent from "./blockContent";
+import breakdownStep from "./breakdownStep";
+import menuItem from "./menuItem";
 import menu from "./menu";
 import contact from "./contact";
 import testimonial from "./testimonial";
@@ -32,6 +34,8 @@ export default createSchema({
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
-    menu
+    menu,
+    breakdownStep,
+    menuItem
   ])
 });

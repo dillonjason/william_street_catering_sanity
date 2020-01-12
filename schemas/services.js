@@ -17,24 +17,7 @@ export default {
       name: "breakdown",
       title: "What You Do",
       type: "array",
-      of: [
-        {
-          name: "breakdownStep",
-          type: "object",
-          fields: [
-            {
-              name: "type",
-              title: "Title",
-              type: "string"
-            },
-            {
-              name: "summary",
-              title: "Summary",
-              type: "blockContent"
-            }
-          ]
-        }
-      ]
+      of: [{ name: "breakdownStep", type: "breakdownStep" }]
     }
   ]
 };

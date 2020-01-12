@@ -13,14 +13,20 @@ export default {
       type: "array",
       of: [
         {
-          name: "type",
-          title: "Title",
-          type: "string"
-        },
-        {
-          name: "summary",
-          title: "Summary",
-          type: "blockContent"
+          type: "object",
+          name: "item",
+          fields: [
+            {
+              name: "type",
+              title: "Title",
+              type: "string"
+            },
+            {
+              name: "summary",
+              title: "Summary",
+              type: "blockContent"
+            }
+          ]
         }
       ]
     }

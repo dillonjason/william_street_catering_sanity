@@ -14,6 +14,11 @@ export default {
       type: "blockContent"
     },
     {
+      name: "us",
+      title: "Us",
+      type: "blockContent"
+    },
+    {
       name: "images",
       title: "Images",
       type: "array",

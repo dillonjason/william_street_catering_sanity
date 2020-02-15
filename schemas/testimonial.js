@@ -1,6 +1,6 @@
 export default {
   name: "testimonial",
-  title: "Testimonial",
+  title: "Event",
   type: "document",
   fields: [
     {
@@ -32,6 +32,11 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      name: "type",
+      title: "Type of Event",
+      type: "string"
+    },
+    {
       name: "mainImage",
       title: "Main image",
       type: "image",
@@ -50,6 +55,19 @@ export default {
       title: "Body",
       type: "blockContent",
       validation: Rule => Rule.required()
+    },
+    {
+      name: "images",
+      title: "Images",
+      type: "array",
+      of: [
+        {
+          type: "image",
+          options: {
+            hotspot: true
+          }
+        }
+      ]
     },
     {
       name: "menu",

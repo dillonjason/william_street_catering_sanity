@@ -6,7 +6,14 @@ export default {
     {
       name: "title",
       title: "Title",
-      type: "string"
+      type: "string",
+      validation: Rule => Rule.required()
+    },
+    {
+      name: "date",
+      title: "Date of Event",
+      type: "date",
+      validation: Rule => Rule.required()
     },
     {
       name: "slug",
@@ -21,7 +28,8 @@ export default {
     {
       name: "clientName",
       title: "Client Name",
-      type: "string"
+      type: "string",
+      validation: Rule => Rule.required()
     },
     {
       name: "mainImage",
@@ -34,12 +42,14 @@ export default {
     {
       name: "summary",
       title: "Summary",
-      type: "string"
+      type: "string",
+      validation: Rule => Rule.required()
     },
     {
       name: "body",
       title: "Body",
-      type: "blockContent"
+      type: "blockContent",
+      validation: Rule => Rule.required()
     },
     {
       name: "menu",

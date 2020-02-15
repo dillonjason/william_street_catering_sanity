@@ -19,11 +19,11 @@ export default {
       name: "slug",
       title: "Slug",
       type: "slug",
-      hidden: true,
       options: {
         source: "title",
         maxLength: 96
-      }
+      },
+      validation: Rule => Rule.required()
     },
     {
       name: "clientName",

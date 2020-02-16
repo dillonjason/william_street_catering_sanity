@@ -1,45 +1,55 @@
 export default {
-  name: 'contact',
-  title: 'Contact Info',
-  type: 'document',
+  name: "contact",
+  title: "Contact Info",
+  type: "document",
   fields: [
     {
-      name: 'phone',
-      title: 'Phone Number',
-      type: 'string'
+      name: "phone",
+      title: "Phone Number",
+      type: "string"
     },
     {
-      name: 'email',
-      title: 'Email',
-      type: 'string'
+      name: "email",
+      title: "Email",
+      type: "string"
     },
     {
-      name: 'address',
-      title: 'Address',
-      type: 'string'
+      name: "address",
+      title: "Address",
+      type: "string"
     },
     {
-      name: 'city',
-      title: 'City',
-      type: 'string'
+      name: "city",
+      title: "City",
+      type: "string"
     },
     {
-      name: 'state',
-      title: 'State',
-      type: 'string'
+      name: "state",
+      title: "State",
+      type: "string"
     },
     {
-      name: 'zip',
-      title: 'Zip',
-      type: 'string'
+      name: "zip",
+      title: "Zip",
+      type: "string"
+    },
+    {
+      name: "facebook",
+      title: "Facebook",
+      type: "string"
+    },
+    {
+      name: "instagram",
+      title: "Instagram",
+      type: "string"
     }
   ],
   preview: {
     select: {
-      title: 'phone'
+      title: "phone"
     },
     prepare() {
-      return {title: 'Contact Info'}
+      return { title: "Contact Info" };
     }
   }
-}
+};

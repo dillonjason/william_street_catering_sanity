@@ -15,6 +15,7 @@ import employee from "./employee";
 import summary from "./summary";
 import assets from "./assets";
 import services from "./services";
+import blog from "./blog";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -36,6 +37,7 @@ export default createSchema({
     blockContent,
     menu,
     breakdownStep,
-    menuItem
+    menuItem,
+    blog
   ])
 });
